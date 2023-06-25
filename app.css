@@ -1,0 +1,89 @@
+* {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: sans-serif;
+    margin-bottom: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    margin: 4rem auto;
+}
+
+.task-form {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.task-group {
+
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+input[type="text"] {
+    border: 2px solid black;
+    background-color: darkseagreen;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.task-form button {
+    width: 20%;
+    background-color: darkseagreen;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.task-form button:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+button {
+    padding: .5rem .8rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+}
+
+button:hover {
+cursor: pointer;
+    background-color: darkred;
+}
+
+hr {
+    width: 100%;
+    color: black;
+    margin-bottom: .5rem;
+}
+
+input[type=checkbox] + label {
+    text-decoration: none;
+}
+
+input[type=checkbox]:checked + span.task {
+    text-decoration: line-through;
+}
