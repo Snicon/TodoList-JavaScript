@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>To-Do List</h1>
+        <div class="task-form">
+            <input type="text" id="input-task">
+            <button id="add-task-button" onclick="addTask(document.getElementById('input-task').value, false)">Add task</button>
+        </div>
+        <hr/>
+        <ul id="task-list"></ul>
+    </main>
+</body>
+</html>
